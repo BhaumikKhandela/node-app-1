@@ -1,6 +1,6 @@
-const express = require("express");
-const cluster = require("cluster");
-const os = require("os");
+import express from "express";
+import cluster, { Worker } from "cluster";
+import os from "os";
 
 const port = 3000;
 const totalCpus = os.cpus().length;
